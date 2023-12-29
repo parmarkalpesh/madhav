@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearCreditCardItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_24pxv"
+        android:paddingEnd="@dimen/_21pxh"
+        android:paddingStart="@dimen/_21pxh"
+        android:paddingTop="@dimen/_24pxv" style="@style/groupStyle{&quot;name&quot;:&quot;primary&quot;,&quot;opacity&quot;:1}cornerRadius">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="@dimen/_22pxh"
+            android:layout_width="@dimen/_36pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_volume"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_volume"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDebitCardNumber"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.03" android:singleLine="true"
+            android:text="@string/msg_6326_9124"
+            style="@style/txtPoppinsbold24" tools:text="@string/msg_6326_9124"/>
+        <LinearLayout android:id="@+id/linearDetailsTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <TextView android:alpha="0.5" android:ellipsize="end"
+                android:id="@+id/txtCARDHOLDER"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.03" android:singleLine="true"
+                android:text="@string/lbl_card_holder"
+                style="@style/txtPoppinsregular10_2" tools:text="@string/lbl_card_holder"/>
+            <TextView android:alpha="0.5" android:ellipsize="end"
+                android:id="@+id/txtCARDSAVE"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.03" android:singleLine="true"
+                android:text="@string/lbl_card_save"
+                style="@style/txtPoppinsregular10_2" tools:text="@string/lbl_card_save"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearHolderDetails"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDominicOvo"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.03" android:singleLine="true"
+                android:text="@string/lbl_dominic_ovo"
+                style="@style/txtPoppinsbold10_2" tools:text="@string/lbl_dominic_ovo"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDebitCardExpiry"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.03" android:singleLine="true"
+                android:text="@string/lbl_06_24"
+                style="@style/txtPoppinsbold10_2" tools:text="@string/lbl_06_24"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

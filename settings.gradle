@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "bca_s_application3"
